@@ -1,0 +1,14 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:nrw="http://training.it.nrw">
+    <soapenv:Body>
+        <nrw:createGreeting>
+            <nrw:personName>Thilo Frotscher</nrw:personName>
+            <nrw:language>de</nrw:language>
+        </nrw:createGreeting>
+    </soapenv:Body>
+</soapenv:Envelope>
+
+
+Achtung, folgende HTTP-Header müssen gesetzt werden:
+
+Content-Type: text/xml
+SOAPAction: urn:createGreeting
